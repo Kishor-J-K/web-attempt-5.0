@@ -1,0 +1,27 @@
+<div class="border-bottom" style="margin-bottom:16px; padding-bottom:4px">
+   
+    <div class="container text-center">
+        <div class="row align-items-start">
+          <div class="col">
+            <h4 style="color:rgb(150,150,150); margin-bottom:8px;">
+                {{job['title']}}
+            </h4>
+            <div><b>location:{{job['location']}}</b></div>
+        
+        {% if 'salary' in job %}
+        <div>
+            <b>Salary:</b>{{job['salary']}}
+        </div>
+        {% endif %}
+          </div>
+         
+          <div class="col">
+            <a href="mailto:kishorj.22.beds@acharya.ac.in?subject=Application for {{job['title']}} & body=NAME:
+
+            RESUME LINK:
+            
+            LINKDIN: " type="button" class="btn btn-outline-primary">Apply</a>
+          </div>
+        </div>
+      </div> 
+</div>
